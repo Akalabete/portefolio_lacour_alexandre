@@ -18,8 +18,8 @@ export default function Header() {
                 />
             </div>
             <div className={styles.headerTitle}>
-                <p className={styles.titles}><strong>LACOUR Alexandre</strong></p>
-                <p className={styles.subTitles}>développeur web</p>
+                <h2 className={styles.titles}>LACOUR Alexandre</h2>
+                <h3 className={styles.subTitles}>développeur web</h3>
             </div>
             <div className={styles.nav}>
                 <nav className={styles.navElements}>
