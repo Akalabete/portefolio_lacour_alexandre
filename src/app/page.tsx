@@ -1,9 +1,33 @@
+'use client';
+
 import Image from 'next/image'
 import styles from './page.module.scss'
+import { useAppSelector, useAppDispatch } from '@/redux/hook';
+import { openModal, closeModal } from "@/redux/features//modalSlice";
+import Modal from './components/modal/page';
 
 
+
+
+  
 export default function MainPage() {
 
+  const dispatch = useAppDispatch();
+  
+  const modal = useAppSelector((state: { modal: any; }) => state.modal);
+  const handleCloseModal = () => {
+    dispatch(closeModal());
+  };
+  const onShowCardClick = (cardData: { title: any; skills: any; image: any; imageAlt: any;}) => {
+    dispatch(openModal({
+      title: cardData.title,
+      skills: cardData.skills,
+      image: cardData.image,
+      imageAlt: cardData.imageAlt,
+    })
+    )
+  };
+  
   return(
     <main>
       <section className={styles.realisations}>
@@ -13,9 +37,27 @@ export default function MainPage() {
              personnalisés.</h1>
         <h2>Par Dev&apos;Your Synergy</h2>
         <h2>Les technologies web innovantes que Dev&apos;Your Synergy met à votre dispotion.</h2>
+        {modal.isOpen && (
+        <Modal
+          isOpen={modal.isOpen}
+          title={modal.title}
+          skills={modal.skills}
+          image={modal.image}
+          imageAlt={modal.imageAlt}
+          onClose={handleCloseModal}
+        />
+      )} 
         <div className={styles.technologiesContainer}>
           
-          <div className={styles.showCard}>
+          <div 
+            className={styles.showCard}
+            onClick={() => onShowCardClick({
+              title: "Compétences HTML",
+              skills: ["comp1", "comp2", "comp3"],
+              image: "le_path_de_limage_voulue",
+              imageAlt: "Exemple illustrant la pratique du HTML",
+            })}
+          >
             <Image 
               src="/HTML.png" 
               className={styles.showCardImg}

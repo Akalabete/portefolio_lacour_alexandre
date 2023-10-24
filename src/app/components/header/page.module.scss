@@ -10,6 +10,7 @@
     .coverImage{ 
         height: 100px;
         width: 100px;
+        margin-right: 25px;
         @include imageBoxing;
     }
     ul {
@@ -22,8 +23,8 @@
             text-decoration : underline 2px purple;
         }
     }
-    p {
-       font-size: 12px; 
+    h2, h3 {
+       font-size: 14px; 
        margin-left: 10px;
        margin-top: 10px;
 
@@ -37,8 +38,8 @@
             height: 120px;
             width: 120px;
         }
-        p{
-            font-size: 14px;
+        h2, h3{
+            font-size: 16px;
         }
     }
 }
@@ -55,8 +56,8 @@
                 display: inline;
             }
         }
-        p{
-            font-size: 18px;
+        h2, h3{
+            font-size: 20px;
         }
     }
 }
