@@ -17,13 +17,17 @@ export default function Header() {
                 priority
                 />
             </div>
+            <div className={styles.headerTitle}>
+                <p className={styles.titles}><strong>LACOUR Alexandre</strong></p>
+                <p className={styles.subTitles}>développeur web</p>
+            </div>
             <div className={styles.nav}>
                 <nav className={styles.navElements}>
                     <ul>
-                        <li className={styles.liElementOne}>1</li>
-                        <li className={styles.liElementTwo}>2</li>
-                        <li className={styles.liElementThree}>3</li>
-                        <li className={styles.liElementFour}>4</li>
+                        <li className={styles.liElementOne}>Technologies</li>
+                        <li className={styles.liElementTwo}>SEO</li>
+                        <li className={styles.liElementThree}>A propos</li>
+                        <li className={styles.liElementFour}>Contact</li>
                     </ul>
                 </nav>
             </div>
