@@ -23,7 +23,9 @@ export default function Modal({isOpen, title, skills, image, imageAlt, onClose}:
                 <div className={styles.modalContainer}>
                     <div className={styles.modalInfos}>
                         <h2>{title}</h2>
-                        <p>{}</p>
+                        {skills.map((skill, index) => (
+                            <p key={index}>{skill}</p>
+                        ))}     
                     </div>
                     <div className={styles.modalImage}>
                         <Image 

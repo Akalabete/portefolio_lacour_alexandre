@@ -3,7 +3,9 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   isOpen: false,
   title: '',
-  message: '',
+  skills: [],
+  image: '',
+  imageAlt: ''
 };
 
 const modalSlice = createSlice({
@@ -13,12 +15,16 @@ const modalSlice = createSlice({
     openModal: (state, action) => {
       state.isOpen = true;
       state.title = action.payload.title;
-      state.message = action.payload.message;
+      state.skills = action.payload.skills;
+      state.image = action.payload.image;
+      state.imageAlt = action.payload.imageAlt;
     },
     closeModal: (state) => {
       state.isOpen = false;
       state.title = '';
-      state.message = '';
+      state.skills = [];
+      state.image = '';
+      state.imageAlt = '';
     },
   },
 });

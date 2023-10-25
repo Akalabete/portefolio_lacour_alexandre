@@ -54,7 +54,7 @@ export default function MainPage() {
             onClick={() => onShowCardClick({
               title: "Compétences HTML",
               skills: ["comp1", "comp2", "comp3"],
-              image: "le_path_de_limage_voulue",
+              image: "/HTML.png",
               imageAlt: "Exemple illustrant la pratique du HTML",
             })}
           >
@@ -156,14 +156,16 @@ export default function MainPage() {
         <h2>Dev&apos;Your Synergy est à votre écoute pour tous vos projets.</h2>
         <div className={styles.contactsContainer}>
           <div className={styles.presentationContainer}>
-            <p>Développeur indépendant, spécialisé dans le front-end,
-              je vous propose des solutions innovantes et design pour
-                vos contenus web.</p>
+            <p>Développeur indépendant, valorisé par une formation d&apos;intégrateur
+               web par <a href="#">Open Classrooms</a>
+               , je vous propose des solutions 
+               innovantes et design pour vos contenus web.</p>
           </div>
           <div className={styles.contactInfoContainer}>
             <p><strong>mél: </strong>lacour_alexandre@proton.me</p>
             <p><strong>tél: </strong>06 95 23 81 26</p>
             <p><strong>git: </strong>https://github.com/Akalabete</p>
+            <p><strong>LinkedIn: </strong>www.linkedin.com/in/lacour-alexandre</p>
           </div>
         </div>
       </section>
