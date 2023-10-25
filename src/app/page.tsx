@@ -18,12 +18,13 @@ export default function MainPage() {
   const handleCloseModal = () => {
     dispatch(closeModal());
   };
-  const onShowCardClick = (cardData: { title: any; skills: any; image: any; imageAlt: any;}) => {
+  const onShowCardClick = (cardData: { title: any; skills: any; image: any; imageAlt: any; link: any;}) => {
     dispatch(openModal({
       title: cardData.title,
       skills: cardData.skills,
       image: cardData.image,
       imageAlt: cardData.imageAlt,
+      link: cardData.link,
     })
     )
   };
@@ -45,7 +46,8 @@ export default function MainPage() {
           skills: modal.skills,
           image: modal.image,
           imageAlt: modal.imageAlt,
-          onClose: handleCloseModal
+          onClose: handleCloseModal,
+          link: modal.link
         }}
       />
       )} 
@@ -55,9 +57,16 @@ export default function MainPage() {
             className={styles.showCard}
             onClick={() => onShowCardClick({
               title: "Compétences HTML",
-              skills: ["comp1", "comp2", "comp3"],
+              skills: [
+                "Structure sémantique aux normes",
+                "Utilisation de balises HTML",
+                "Création de formulaires",
+                "Mise à jour et maintenance",
+                "Intégration de ressources externes"
+              ],
               image: "/HTML.png",
               imageAlt: "Exemple illustrant la pratique du HTML",
+              link: "https://www.sample.smp",
             })}
           >
             <Image 
@@ -70,7 +79,23 @@ export default function MainPage() {
               priority
             />
           </div>
-          <div className={styles.showCard}>
+          <div 
+            className={styles.showCard}
+            onClick={() => onShowCardClick({
+              title: "Compétences CSS",
+              skills: [
+                "Maîtrise des sélecteurs CSS",
+                "Mise en page display flex ou grid",
+                "Styles d'animation CSS",
+                "Utilisation de police et typographies",
+                "Préprocesseur CSS (SASS, SCSS)",
+                "Méthodologie CSS(BEM)"
+              ],
+              image: "/CSS.png",
+              imageAlt: "Exemple illustrant la pratique du CSS",
+              link: '',
+            })}
+          >
             <Image 
               src="/CSS.png" 
               className={styles.showCardImg}
@@ -81,7 +106,23 @@ export default function MainPage() {
               priority
             />
           </div>
-          <div className={styles.showCard}>
+          <div 
+            className={styles.showCard}
+            onClick={() => onShowCardClick({
+              title: "Compétences JavaScript",
+              skills: [
+                "Javascript ES6",
+                "Manipulation du DOM",
+                "Evénement et gestion des événements",
+                "Requêtes Fetch",
+                "Intégration et utilisation d'API",
+                "Manipulation de tableaux et chaîne de caractères"
+              ],
+              image: "/JS.png",
+              imageAlt: "Exemple illustrant la pratique du Javascript",
+              link: '',
+            })}
+          >
             <Image 
               src="/JS.png" 
               className={styles.showCardImg}
@@ -92,7 +133,22 @@ export default function MainPage() {
               priority
             />
           </div>
-          <div className={styles.showCard}>
+          <div 
+            className={styles.showCard}
+            onClick={() => onShowCardClick({
+              title: "Compétences NextJS",
+              skills: [
+                "REACT",
+                "Routage dynamique",
+                "Gestionnaire d'état(REDUX)",
+                "Rendu Côté client",
+                "Pages dynamiques"
+              ],
+              image: "/NEXT.png",
+              imageAlt: "Exemple illustrant la pratique du NextJS",
+              link: '',
+            })}
+          >
             <Image 
               src="/NEXT.png" 
               className={styles.showCardImg}
@@ -107,7 +163,21 @@ export default function MainPage() {
         </div>
         <h2>Dev&apos;Your Synergy audit vos sites et vous propose des axes d&apos;amélioration </h2>
         <div className={styles.SEOContainer}>
-          <div className={styles.showCard}>
+          <div 
+            className={styles.showCard}
+            onClick={() => onShowCardClick({
+              title: "Compétences SEO",
+              skills: [
+                "Optimisation on-page",
+                "Optimisation des images",
+                "Recherches de mots-clés pertinents",
+                "Optimisation de la vitesse de chargement"
+              ],
+              image: "/SEO.png",
+              imageAlt: "Exemple illustrant les bonnes pratiques SEO",
+              link: '',
+            })}
+          >
             <Image 
               src="/SEO.png" 
               className={styles.showCardImg}
@@ -118,7 +188,21 @@ export default function MainPage() {
               priority
             />
           </div>
-          <div className={styles.showCard}>
+          <div 
+            className={styles.showCard}
+            onClick={() => onShowCardClick({
+              title: "Rédaction SEO",
+              skills: [
+                "Rédaction incluant des mots-clés pertinents",
+                "Contenu de qualité, engageant pour les utilisateurs",
+                "Création de titre et description méta efficaces",
+                "Liens internes et externes"
+              ],
+              image: "/redactionSEO.png",
+              imageAlt: "Exemple illustrant un contenu web adapté",
+              link: '',
+            })}
+          >
             <Image 
               src="/redactionSEO.png" 
               className={styles.showCardImg}
@@ -129,7 +213,21 @@ export default function MainPage() {
               priority
             />
           </div>
-          <div className={styles.showCard}>
+          <div 
+            className={styles.showCard}
+            onClick={() => onShowCardClick({
+              title: "Accessibilité",
+              skills: [
+                "Normes d'accessibilité web(WCAG)",
+                "Utilisation de couleurs accessibles",
+                "Navigation clavier",
+                "Textes alternatifs"
+              ],
+              image: "/accessibilityIconSet.png",
+              imageAlt: "Exemple illustrant les normes d'accessibilité",
+              link: '',
+            })}
+          >
             <Image 
               src="/accessibilityIconSet.png" 
               className={styles.showCardImg}
@@ -140,7 +238,21 @@ export default function MainPage() {
               priority
             />
           </div>
-          <div className={styles.showCard}>
+          <div 
+            className={styles.showCard}
+            onClick={() => onShowCardClick({
+              title: "Audit de sites",
+              skills: [
+                "Utilisation d'outils d'audit",
+                "Création de rapports d'optimisation",
+                "Proposition d'axes d'amélioration",
+                "Suivi de traffic"
+              ],
+              image: "/optimisation.png",
+              imageAlt: "Exemple illustrant un outil d'audit",
+              link: '',
+            })}
+          >
             <Image 
               src="/optimisation.png" 
               className={styles.showCardImg}
@@ -153,7 +265,6 @@ export default function MainPage() {
           </div>
         </div>
       </section>
-       
       <section className={styles.contacts}>
         <h2>Dev&apos;Your Synergy est à votre écoute pour tous vos projets.</h2>
         <div className={styles.contactsContainer}>

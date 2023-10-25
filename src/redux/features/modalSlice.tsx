@@ -5,7 +5,8 @@ const initialState = {
   title: '',
   skills: [],
   image: '',
-  imageAlt: ''
+  imageAlt: '',
+  link: ''
 };
 
 const modalSlice = createSlice({
@@ -18,6 +19,7 @@ const modalSlice = createSlice({
       state.skills = action.payload.skills;
       state.image = action.payload.image;
       state.imageAlt = action.payload.imageAlt;
+      state.link = action.payload.link;
     },
     closeModal: (state) => {
       state.isOpen = false;
@@ -25,6 +27,7 @@ const modalSlice = createSlice({
       state.skills = [];
       state.image = '';
       state.imageAlt = '';
+      state.link = '';
     },
   },
 });

@@ -26,7 +26,7 @@ export default function Modal({params}:ModalProps){
             <div className={styles.modal}>
                 <div className={styles.modalContainer}>
                     <div className={styles.modalInfos}>
-                        <h2>{params.title}</h2>
+                    <h2 className={styles.modalTitle}>{params.title}</h2>
                         {params.skills.map((skill, index) => (
                             <p key={index}>{skill}</p>
                         ))}     

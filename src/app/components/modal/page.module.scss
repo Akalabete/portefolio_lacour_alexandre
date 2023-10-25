@@ -28,15 +28,37 @@
         @media screen and (min-width: 600px){
             flex-direction: row;
         }
+        .modalTitle {
+          font-size: 28px;
+          color: black;
+          opacity: 0;;
+          animation-name: textAppearing;
+          animation-duration: 1000ms;
+          animation-fill-mode: forwards;
+          animation-delay: 0.5s;
+        }
+       
     }
     h2 {
       color: black;
     }
     p {
       color: black;
+      text-align: left;
     }
   }
   
   .button {
     margin-top: 10px;
+  }
+
+  @keyframes textAppearing {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+     opacity: 1;;
+     transform: translateY(0);
+    }
   }
