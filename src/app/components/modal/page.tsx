@@ -6,7 +6,7 @@ import Image from 'next/image'
 interface ModalProps {
     isOpen: boolean;
     title: string;
-    skills: [];
+    skills: string [];
     image: string;
     imageAlt: string;
     
