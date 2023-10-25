@@ -39,13 +39,15 @@ export default function MainPage() {
         <h2>Les technologies web innovantes que Dev&apos;Your Synergy met à votre dispotion.</h2>
         {modal.isOpen && (
         <Modal
-          isOpen={modal.isOpen}
-          title={modal.title}
-          skills={modal.skills}
-          image={modal.image}
-          imageAlt={modal.imageAlt}
-          onClose={handleCloseModal}
-        />
+        params={{
+          isOpen: modal.isOpen,
+          title: modal.title,
+          skills: modal.skills,
+          image: modal.image,
+          imageAlt: modal.imageAlt,
+          onClose: handleCloseModal
+        }}
+      />
       )} 
         <div className={styles.technologiesContainer}>
           
