@@ -10,6 +10,7 @@ interface ModalProps {
         skills: string [];
         image: string;
         imageAlt: string;
+        link: string;
         onClose: () => void;
     }
     
@@ -29,7 +30,11 @@ export default function Modal({params}:ModalProps){
                     <h2 className={styles.modalTitle}>{params.title}</h2>
                         {params.skills.map((skill, index) => (
                             <p key={index}>{skill}</p>
-                        ))}     
+                        ))}
+                        {params.link !== '' ?
+                            <p><strong>Exemple: </strong><a href={params.link}>{params.link}</a></p>
+                            : '' 
+                            }       
                     </div>
                     <div className={styles.modalImage}>
                         <Image 
