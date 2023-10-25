@@ -1,9 +1,10 @@
 'use client'
 
+import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, PromiseLikeOfReactNode, Key } from 'react';
 import styles from './page.module.scss';
 import Image from 'next/image'
 
-interface ModalProps {
+/*interface ModalProps {
     isOpen: boolean;
     title: string;
     skills: string [];
@@ -11,7 +12,7 @@ interface ModalProps {
     imageAlt: string;
     
     onClose: () => void;
-}
+}*/
 export default function Modal({isOpen, title, skills, image, imageAlt, onClose}:ModalProps){
 
     if (!isOpen) {
@@ -23,7 +24,7 @@ export default function Modal({isOpen, title, skills, image, imageAlt, onClose}:
                 <div className={styles.modalContainer}>
                     <div className={styles.modalInfos}>
                         <h2>{title}</h2>
-                        {skills.map((skill, index) => (
+                        {skills.map((skill: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | PromiseLikeOfReactNode | null | undefined, index: Key | null | undefined) => (
                             <p key={index}>{skill}</p>
                         ))}     
                     </div>
