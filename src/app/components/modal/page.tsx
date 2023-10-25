@@ -4,7 +4,7 @@ import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, PromiseLik
 import styles from './page.module.scss';
 import Image from 'next/image'
 
-/*interface ModalProps {
+interface ModalProps {
     isOpen: boolean;
     title: string;
     skills: string [];
@@ -12,7 +12,7 @@ import Image from 'next/image'
     imageAlt: string;
     
     onClose: () => void;
-}*/
+}
 export default function Modal({isOpen, title, skills, image, imageAlt, onClose}:ModalProps){
 
     if (!isOpen) {
