@@ -55,8 +55,13 @@
     @include imageBoxing;
     transform: scale(1.2);
     transition: 0.3s
-  
 }
+.cardCollapser {
+  transform: scale(0);
+  transition: 0.2s;
+}
+
+
 .contacts {
   margin: 20px 2%;
   text-align: center;

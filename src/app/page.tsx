@@ -1,6 +1,6 @@
 'use client';
-
-import Image from 'next/image'
+import { useState } from 'react';
+import Image from 'next/image';
 import styles from './page.module.scss'
 import { useAppSelector, useAppDispatch } from '@/redux/hook';
 import { openModal, closeModal } from "@/redux/features//modalSlice";
@@ -15,20 +15,28 @@ export default function MainPage() {
   const dispatch = useAppDispatch();
   
   const modal = useAppSelector((state: { modal: any; }) => state.modal);
+  const [selectedCardIndex, setSelectedCardIndex] = useState(-1); 
   const handleCloseModal = () => {
     dispatch(closeModal());
+    setSelectedCardIndex(-1);
   };
-  const onShowCardClick = (cardData: { title: any; skills: any; image: any; imageAlt: any; link: any;}) => {
+  
+  const onShowCardClick = (cardData: { title: any; skills: any; image: any; imageAlt: any; link: any; index: number;}) => {
     dispatch(openModal({
+      index: cardData.index,
       title: cardData.title,
       skills: cardData.skills,
       image: cardData.image,
       imageAlt: cardData.imageAlt,
       link: cardData.link,
-    })
+    }),
     )
   };
-
+  
+  const handleCardClick = (cardData: { title: any; skills: any; image: any; imageAlt: any; link: any; index: number }) => {
+    setSelectedCardIndex(cardData.index);
+    onShowCardClick(cardData);
+  };
   return(
     <main>
       <section className={styles.realisations}>
@@ -41,6 +49,7 @@ export default function MainPage() {
         {modal.isOpen && (
         <Modal
         params={{
+          index: modal.cardIndex,
           isOpen: modal.isOpen,
           title: modal.title,
           skills: modal.skills,
@@ -54,8 +63,9 @@ export default function MainPage() {
         <div className={styles.technologiesContainer}>
           
           <div 
-            className={styles.showCard}
-            onClick={() => onShowCardClick({
+            className={`${styles.showCard} ${selectedCardIndex === 1 ? 'cardCollapser' : ''}`}
+            onClick={() => handleCardClick({
+              index: 1,
               title: "Compétences HTML",
               skills: [
                 "Structure sémantique aux normes",
@@ -89,6 +99,7 @@ export default function MainPage() {
           <div 
             className={styles.showCard}
             onClick={() => onShowCardClick({
+              index: 2,
               title: "Compétences CSS",
               skills: [
                 "Maîtrise des sélecteurs CSS",
@@ -124,6 +135,7 @@ export default function MainPage() {
           <div 
             className={styles.showCard}
             onClick={() => onShowCardClick({
+              index: 3,
               title: "Compétences JavaScript",
               skills: [
                 "Javascript ES6",
@@ -159,6 +171,7 @@ export default function MainPage() {
           <div 
             className={styles.showCard}
             onClick={() => onShowCardClick({
+              index: 4,
               title: "Compétences NextJS",
               skills: [
                 "REACT",
@@ -196,6 +209,7 @@ export default function MainPage() {
           <div 
             className={styles.showCard}
             onClick={() => onShowCardClick({
+              index: 5,
               title: "Compétences SEO",
               skills: [
                 "Optimisation on-page",
@@ -227,6 +241,7 @@ export default function MainPage() {
           <div 
             className={styles.showCard}
             onClick={() => onShowCardClick({
+              index: 6,
               title: "Rédaction SEO",
               skills: [
                 "Rédaction incluant des mots-clés pertinents",
@@ -258,6 +273,7 @@ export default function MainPage() {
           <div 
             className={styles.showCard}
             onClick={() => onShowCardClick({
+              index: 7,
               title: "Accessibilité",
               skills: [
                 "Normes d'accessibilité web(WCAG)",
@@ -289,6 +305,7 @@ export default function MainPage() {
           <div 
             className={styles.showCard}
             onClick={() => onShowCardClick({
+              index: 8,
               title: "Audit de sites",
               skills: [
                 "Utilisation d'outils d'audit",

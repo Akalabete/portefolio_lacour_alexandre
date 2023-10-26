@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 interface ModalProps {
     params: {
+        index: number
         isOpen: boolean;
         title: string;
         skills: string [];
@@ -19,12 +20,13 @@ export default function Modal({params}:ModalProps){
     const [hoverIndex, setHoverIndex] = useState(-1);
     const handleMouseOut = () => {
         setHoverIndex(-1)
+        params.index= -1;
       }
     if (!params.isOpen) {
         return null;
     }
     return (
-        <div className={styles.modalOverlay}>
+        <div className={styles.modalOverlay} onClick={params.onClose}>
             <div className={styles.modal} onMouseOut={handleMouseOut}>
                 <div className={styles.modalContainer}>
                     <div className={styles.modalInfos}>
@@ -53,7 +55,7 @@ export default function Modal({params}:ModalProps){
                         />
                     </div>
                 </div>
-                <button className={styles.button} onClick={params.onClose}>Ok !</button>
+                <button className={styles.button} onClick={params.onClose}>Fermer</button>
             </div>
         </div>
     )
