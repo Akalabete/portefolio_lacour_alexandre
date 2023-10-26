@@ -98,7 +98,15 @@ export default function MainPage() {
                 "Préprocesseur CSS (SASS, SCSS)",
                 "Méthodologie CSS(BEM)"
               ],
-              image: "/CSS.png",
+              image:[
+                "/CSS.png",
+                "/HTML.png",
+                "/CSS.png",
+                "/JS.png",
+                "/NEXT.png",
+                "/SEO.png",
+                "/redactionSEO.png"
+              ],
               imageAlt: "Exemple illustrant la pratique du CSS",
               link: '',
             })}
@@ -125,7 +133,15 @@ export default function MainPage() {
                 "Intégration et utilisation d'API",
                 "Manipulation de tableaux et chaîne de caractères"
               ],
-              image: "/JS.png",
+              image: [
+                "/JS.png",
+                "/HTML.png",
+                "/CSS.png",
+                "/JS.png",
+                "/NEXT.png",
+                "/SEO.png",
+                "/redactionSEO.png"
+              ],
               imageAlt: "Exemple illustrant la pratique du Javascript",
               link: '',
             })}
@@ -151,7 +167,14 @@ export default function MainPage() {
                 "Rendu Côté client",
                 "Pages dynamiques"
               ],
-              image: "/NEXT.png",
+              image: [
+                "/NEXT.png",
+                "/HTML.png",
+                "/CSS.png",
+                "/JS.png",
+                "/NEXT.png",
+                "/SEO.png",
+              ],
               imageAlt: "Exemple illustrant la pratique du NextJS",
               link: '',
             })}
@@ -180,7 +203,13 @@ export default function MainPage() {
                 "Recherches de mots-clés pertinents",
                 "Optimisation de la vitesse de chargement"
               ],
-              image: "/SEO.png",
+              image: [
+                "/SEO.png",
+                "/HTML.png",
+                "/CSS.png",
+                "/JS.png",
+                "/NEXT.png",
+              ],
               imageAlt: "Exemple illustrant les bonnes pratiques SEO",
               link: '',
             })}
@@ -205,7 +234,13 @@ export default function MainPage() {
                 "Création de titre et description méta efficaces",
                 "Liens internes et externes"
               ],
-              image: "/redactionSEO.png",
+              image: [
+                "/redactionSEO.png",
+                "/HTML.png",
+                "/CSS.png",
+                "/JS.png",
+                "/NEXT.png",
+              ],
               imageAlt: "Exemple illustrant un contenu web adapté",
               link: '',
             })}
@@ -230,7 +265,13 @@ export default function MainPage() {
                 "Navigation clavier",
                 "Textes alternatifs"
               ],
-              image: "/accessibilityIconSet.png",
+              image: [
+                "/accessibilityIconSet.png",
+                "/HTML.png",
+                "/CSS.png",
+                "/JS.png",
+                "/NEXT.png",
+              ],
               imageAlt: "Exemple illustrant les normes d'accessibilité",
               link: '',
             })}
@@ -255,7 +296,13 @@ export default function MainPage() {
                 "Proposition d'axes d'amélioration",
                 "Suivi de traffic"
               ],
-              image: "/optimisation.png",
+              image: [
+                "/optimisation.png",
+                "/HTML.png",
+                "/CSS.png",
+                "/JS.png",
+                "/NEXT.png",
+              ],
               imageAlt: "Exemple illustrant un outil d'audit",
               link: '',
             })}
