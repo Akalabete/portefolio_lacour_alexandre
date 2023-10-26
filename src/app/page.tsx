@@ -28,7 +28,7 @@ export default function MainPage() {
     })
     )
   };
-  
+
   return(
     <main>
       <section className={styles.realisations}>
@@ -36,7 +36,7 @@ export default function MainPage() {
           rédaction de contenu, optimisation SEO,
             référencement naturel, designs élégants et étude de projets
              personnalisés.</h1>
-        <h2>Par Dev&apos;Your Synergy</h2>
+        <h2 className={styles.specialTitle}>Par Dev&apos;Your Synergy</h2>
         <h2>Les technologies web innovantes que Dev&apos;Your Synergy met à votre dispotion.</h2>
         {modal.isOpen && (
         <Modal
@@ -64,7 +64,14 @@ export default function MainPage() {
                 "Mise à jour et maintenance",
                 "Intégration de ressources externes"
               ],
-              image: "/HTML.png",
+              image: [
+                "/HTML.png",
+                "/CSS.png",
+                "/JS.png",
+                "/NEXT.png",
+                "/SEO.png",
+                "/redactionSEO.png"
+              ],
               imageAlt: "Exemple illustrant la pratique du HTML",
               link: "https://www.sample.smp",
             })}

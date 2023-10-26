@@ -20,7 +20,8 @@
         }
         li:hover {
             cursor: pointer;
-            text-decoration : underline 2px purple;
+            text-decoration : underline 2px $mainContrastColor;
+            text-underline-offset: 0.2em;
         }
     }
     h2, h3 {

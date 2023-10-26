@@ -1,10 +1,18 @@
 @import './mixins.scss';
 @import './variables.scss';
 
+@font-face {
+  font-family: "Pacifico";
+  src:
+    local("Pacifico"),
+    url("../../public/fonts/Pacifico-Regular.ttf") format("truetype");
+}
 .body {
   padding: 0 2%;
   min-width: 300px;
   @include regularTheme;
+  font-family: Pacifico;
+  
 
 }
 
@@ -13,11 +21,15 @@
   text-align: center;
   h1{
     margin-top: 15px;
-    line-height: 25px;
-    font-size: 18px;
+    line-height: 50px;
+    font-size: 22px;
   }
   h2{
-    font-size: 20px;
+    font-size: 22px;
+  }
+  .specialTitle {
+    color: $mainContrastColor;
+    margin-bottom: 40px;
   }
 }
 

@@ -8,12 +8,12 @@ export default function Header() {
         <div className={styles.header}>
             <div className={styles.selfPic}>
                 <Image 
-                src="https://picsum.photos/200" 
+                src="/photo.jpg" 
                 className={styles.coverImage}
                 alt="Photo de l'auteur du site"
                 height="200"
                 width="200"
-                style={{objectFit:"cover",objectPosition:"center left"  }}
+                style={{objectFit:"cover",objectPosition:"top"  }}
                 priority
                 />
             </div>

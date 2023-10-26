@@ -20,8 +20,7 @@
     border-radius: 4px;
     text-align: center;
     max-width: 80%;
-    max-height: 70%;
-    overflow: hidden;
+    overflow: auto;
     @include imageBoxing;
     .modalContainer {
         display: flex;
@@ -51,6 +50,13 @@
       animation-delay: 0.8s;
       color: black;
       text-align: left;
+      cursor: pointer;
+      line-height: 12px;
+    }
+    p:hover {
+      text-decoration : underline 2px $mainContrastColor;
+      text-underline-offset: 0.2em;
+      
     }
   }
   
