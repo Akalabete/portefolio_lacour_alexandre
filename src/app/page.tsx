@@ -46,6 +46,13 @@ export default function MainPage() {
              personnalisés.</h1>
         <h2 className={styles.specialTitle}>Par Dev&apos;Your Synergy</h2>
         <h2>Les technologies web innovantes que Dev&apos;Your Synergy met à votre dispotion.</h2>
+        <p>Avec une approche qui repose sur la simplicité et l&apos;efficacité,
+           garantissant des sites web élégants et performants. Je vous 
+           accompagne dans la réalisation de vos projets, offrant une excellente
+           expérience utilisateur. Mon savoir-faire me permet de créer
+            des sites web réactifs, séduisants et parfaitement adaptés 
+            à vos besoins.
+        </p>
         {modal.isOpen && (
         <Modal
         params={{
@@ -205,6 +212,11 @@ export default function MainPage() {
           
         </div>
         <h2>Dev&apos;Your Synergy audit vos sites et vous propose des axes d&apos;amélioration </h2>
+        <p>Grâce a un audit approfondi j&apos;optimise les sites et 
+          leur contenu afin d&apos;améliorer le référencement des moteurs de recherche,
+          améliorant ainsi les nombres de vues. Il est également possible de 
+          raffraîchir des pages existantes en remaniant les textes et l&apos;accessibilité
+        </p>
         <div className={styles.SEOContainer}>
           <div 
             className={styles.showCard}
