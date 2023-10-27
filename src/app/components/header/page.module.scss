@@ -32,6 +32,14 @@
     }
 }
 
+.faContainer{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    
+}
 @media screen and (min-width: 450px) {
     .header {
         margin: 15px 15px;
@@ -81,4 +89,18 @@
         }
     }
 }
-
+.tooltipenvelope{
+    position: absolute;
+    top: 30px;
+    left: 0;    
+}
+.tooltipgit{
+    position: absolute;
+    top: 30px;
+    left: 50px;    
+}
+.tooltiplink{
+    position: absolute;
+    top: 30px;
+    left: 100px;    
+}

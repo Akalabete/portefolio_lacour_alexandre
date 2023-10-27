@@ -340,10 +340,21 @@ export default function MainPage() {
         <h2>Dev&apos;Your Synergy est à votre écoute pour tous vos projets.</h2>
         <div className={styles.contactsContainer}>
           <div className={styles.presentationContainer}>
-            <p>Développeur indépendant, valorisé par une formation d&apos;intégrateur
-               web par <a href="#">Open Classrooms</a>
-               , je vous propose des solutions 
-               innovantes et design pour vos contenus web.</p>
+            <p>En tant que développeur web junior, je m&apos;appuie sur
+               ma formation d&apos;intégrateur web obtenue chez <a href="#">Open Classrooms</a> pour vous proposer des 
+               solutions pratiques et esthétiques pour vos projets en 
+               ligne. Mon objectif est de créer des sites web fonctionnels
+                et élégants, en mettant l&apos;accent sur la simplicité et 
+                l&apos;utilisabilité.
+            </p>
+
+            <p>Que ce soit pour un site personnel, une application ou
+              tout autre projet en ligne, je suis là pour vous 
+              accompagner dans la réalisation de vos idées. 
+              Mon engagement est de mettre en œuvre mes compétences 
+              pour concrétiser votre vision sur internet.
+            </p>
+            
           </div>
           <div className={styles.contactInfoContainer}>
             <p><strong>mél: </strong>lacour_alexandre@proton.me</p>
