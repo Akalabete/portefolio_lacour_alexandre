@@ -1,0 +1,31 @@
+.faContainer{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.tooltipenvelope{
+    position: absolute;
+    top: 10px;
+    left: 25%;    
+}
+.tooltipgit{
+    position: absolute;
+    top: 10px;
+    left: 50%;    
+}
+.tooltiplink{
+    position: absolute;
+    top: 10px;
+    left: 75%;    
+}
+.icon {
+    position: absolute;
+}
+.active {
+    position: absolute;
+    top: -10px;
+}

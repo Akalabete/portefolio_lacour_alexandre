@@ -26,10 +26,11 @@
     }
     h2, h3 {
        font-size: 14px; 
-       margin-left: 10px;
-       margin-top: 10px;
+       margin: 10px auto;
+       text-align: center;
 
     }
+    
 }
 
 .faContainer{
@@ -92,15 +93,15 @@
 .tooltipenvelope{
     position: absolute;
     top: 30px;
-    left: 0;    
+    left: -10%;    
 }
 .tooltipgit{
     position: absolute;
     top: 30px;
-    left: 50px;    
+    left: 50%;    
 }
 .tooltiplink{
     position: absolute;
     top: 30px;
-    left: 100px;    
+    left: 110%;    
 }

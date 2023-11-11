@@ -40,12 +40,13 @@ export default function MainPage() {
   return(
     <main>
       <section className={styles.realisations}>
+        <div  className={styles.borderLg}></div>
         <h1>Conception et réalisation de contenu web selon vos besoins,
           rédaction de contenu, optimisation SEO,
             référencement naturel, designs élégants et étude de projets
              personnalisés.</h1>
-        <h2 className={styles.specialTitle}>Par Dev&apos;Your Synergy</h2>
-        <h2>Les technologies web innovantes que Dev&apos;Your Synergy met à votre dispotion.</h2>
+        <div  className={styles.border}></div>
+        <h2>Les technologies web innovantes que je met à votre dispotion.</h2>
         <p>Avec une approche qui repose sur la simplicité et l&apos;efficacité,
            garantissant des sites web élégants et performants. Je vous 
            accompagne dans la réalisation de vos projets, offrant une excellente
@@ -82,15 +83,15 @@ export default function MainPage() {
                 "Intégration de ressources externes"
               ],
               image: [
-                "/HTML.png",
-                "/CSS.png",
-                "/JS.png",
-                "/NEXT.png",
-                "/SEO.png",
-                "/redactionSEO.png"
+                "/html.png",
+                "/structure.png",
+                "/balises.jpg",
+                "/form.png",
+                "/maintenance.png",
+                "/gitmerge.png"
               ],
               imageAlt: "Exemple illustrant la pratique du HTML",
-              link: "https://www.sample.smp",
+              link: "https://github.com/Akalabete/projet_booki",
             })}
           >
             <Image 
@@ -126,7 +127,7 @@ export default function MainPage() {
                 "/redactionSEO.png"
               ],
               imageAlt: "Exemple illustrant la pratique du CSS",
-              link: '',
+              link: 'https://github.com/Akalabete/Ohmyfood',
             })}
           >
             <Image 
@@ -162,7 +163,7 @@ export default function MainPage() {
                 "/redactionSEO.png"
               ],
               imageAlt: "Exemple illustrant la pratique du Javascript",
-              link: '',
+              link: 'https://github.com/Akalabete/Porte-folio-Sophie-BLUEL',
             })}
           >
             <Image 
@@ -196,7 +197,7 @@ export default function MainPage() {
                 "/SEO.png",
               ],
               imageAlt: "Exemple illustrant la pratique du NextJS",
-              link: '',
+              link: 'https://portefolio-lacour-alexandre.vercel.app/',
             })}
           >
             <Image 
@@ -211,7 +212,8 @@ export default function MainPage() {
           </div>
           
         </div>
-        <h2>Dev&apos;Your Synergy audit vos sites et vous propose des axes d&apos;amélioration </h2>
+        <div className={styles.border}></div>
+        <h2>Des audit de sites afin de vous proposer des axes d&apos;amélioration </h2>
         <p>Grâce a un audit approfondi j&apos;optimise les sites et 
           leur contenu afin d&apos;améliorer le référencement des moteurs de recherche,
           améliorant ainsi les nombres de vues. Il est également possible de 
@@ -237,7 +239,7 @@ export default function MainPage() {
                 "/NEXT.png",
               ],
               imageAlt: "Exemple illustrant les bonnes pratiques SEO",
-              link: '',
+              link: 'https://akalabete.github.io/akalabete-github.io/',
             })}
           >
             <Image 
@@ -269,7 +271,7 @@ export default function MainPage() {
                 "/NEXT.png",
               ],
               imageAlt: "Exemple illustrant un contenu web adapté",
-              link: '',
+              link: 'https://github.com/Akalabete/akalabete-github.io',
             })}
           >
             <Image 
@@ -301,7 +303,7 @@ export default function MainPage() {
                 "/NEXT.png",
               ],
               imageAlt: "Exemple illustrant les normes d'accessibilité",
-              link: '',
+              link: 'https://github.com/Akalabete/akalabete-github.io',
             })}
           >
             <Image 
@@ -333,7 +335,7 @@ export default function MainPage() {
                 "/NEXT.png",
               ],
               imageAlt: "Exemple illustrant un outil d'audit",
-              link: '',
+              link: 'https://github.com/Akalabete/akalabete-github.io',
             })}
           >
             <Image 
@@ -349,30 +351,25 @@ export default function MainPage() {
         </div>
       </section>
       <section className={styles.contacts}>
-        <h2>Dev&apos;Your Synergy est à votre écoute pour tous vos projets.</h2>
+      <div className={styles.border}></div>
+        <h2>Je suis disponible pour vous aider à réaliser vos projets.</h2>
         <div className={styles.contactsContainer}>
           <div className={styles.presentationContainer}>
-            <p>En tant que développeur web junior, je m&apos;appuie sur
-               ma formation d&apos;intégrateur web obtenue chez <a href="#">Open Classrooms</a> pour vous proposer des 
+            <p className={styles.presParagraph}>En tant que développeur web junior, je m&apos;appuie sur
+               ma formation d&apos;intégrateur web dispensée par <a href="https://openclassrooms.com/fr/">Open Classrooms</a> afin de vous proposer des 
                solutions pratiques et esthétiques pour vos projets en 
                ligne. Mon objectif est de créer des sites web fonctionnels
                 et élégants, en mettant l&apos;accent sur la simplicité et 
                 l&apos;utilisabilité.
             </p>
 
-            <p>Que ce soit pour un site personnel, une application ou
+            <p className={styles.presParagraph}>Que ce soit pour un site personnel, une application ou
               tout autre projet en ligne, je suis là pour vous 
               accompagner dans la réalisation de vos idées. 
               Mon engagement est de mettre en œuvre mes compétences 
               pour concrétiser votre vision sur internet.
             </p>
             
-          </div>
-          <div className={styles.contactInfoContainer}>
-            <p><strong>mél: </strong>lacour_alexandre@proton.me</p>
-            <p><strong>tél: </strong>06 95 23 81 26</p>
-            <p><strong>git: </strong>https://github.com/Akalabete</p>
-            <p><strong>LinkedIn: </strong>www.linkedin.com/in/lacour-alexandre</p>
           </div>
         </div>
       </section>

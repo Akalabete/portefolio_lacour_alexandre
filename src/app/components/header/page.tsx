@@ -34,13 +34,12 @@ export default function Header() {
     const handleIconClick = (argument: string) => {
         if (!isCopied) {
           if (argument ==="faEnvelop") {
-            navigator.clipboard.writeText('votre@email.com');
+            navigator.clipboard.writeText('lacour_alexandre@hotmail.com');
           } else if (argument === "faGit") {
-            navigator.clipboard.writeText('git@gmail.com');
+            navigator.clipboard.writeText('https://github.com/Akalabete');
           } else if (argument === "faLinked") {
-            navigator.clipboard.writeText('linkedin@gmail');
-          }
-          
+            navigator.clipboard.writeText('www.linkedin.com/in/lacour-alexandre');
+          }          
           setTooltipText('Copié !');
           setIsCopied(true);
           setTimeout(() => {
@@ -136,7 +135,7 @@ export default function Header() {
                     <ul>
                         <li className={styles.liElementOne}>Technologies</li>
                         <li className={styles.liElementTwo}>SEO</li>
-                        <li className={styles.liElementThree}>A propos</li>
+                        <li className={styles.liElementThree}>A&nbsp;propos</li>
                         <li className={styles.liElementFour}>Contact</li>
                     </ul>
                 </nav>
