@@ -28,7 +28,7 @@
   h2{
     font-size: 22px;
   }
-  .border, .borderLg{
+  .border, .borderLg, .borderSmall{
     margin: 20px auto;
     width : 40%;
     height: 3px;
@@ -37,13 +37,21 @@
   .borderLg {
     width: 60%;
   }
+  .borderSmall {
+    width: 20%;
+  }
 }
-
+.siteExemple {
+  border: solid 1px $mainContrastColor;
+}
 .technologiesContainer, .SEOContainer{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+}
+.realisations p{
+  margin: 10px auto;
+  max-width: 70%;
 }
 
 .showCard {

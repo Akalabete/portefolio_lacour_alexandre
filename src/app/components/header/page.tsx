@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import styles from './page.module.scss';
 import CliquableWidgets from '../cliquablewidget/page';
-
+import Link from 'next/link';
 
 
   
@@ -30,10 +30,26 @@ export default function Header() {
             <div className={styles.nav}>
                 <nav className={styles.navElements}>
                     <ul>
-                        <li className={styles.liElementOne}>Technologies</li>
-                        <li className={styles.liElementTwo}>SEO</li>
-                        <li className={styles.liElementThree}>A&nbsp;propos</li>
-                        <li className={styles.liElementFour}>Contact</li>
+                        <li className={styles.liElementOne}>
+                            <Link href="#techno">
+                                Technologies
+                            </Link>
+                        </li>
+                        <li className={styles.liElementTwo}>
+                            <Link href="#SEO">
+                                SEO
+                            </Link>
+                        </li>
+                        <li className={styles.liElementThree}>
+                            <Link href="#About">
+                                A&nbsp;propos
+                            </Link>
+                        </li>
+                        <li className={styles.liElementFour}>
+                            <Link href="#contact">
+                                Contact
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </div>

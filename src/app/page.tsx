@@ -40,12 +40,12 @@ export default function MainPage() {
   return(
     <main>
       <section className={styles.realisations}>
-        <div  className={styles.borderLg}></div>
+        <div className={styles.borderLg}></div>
         <h1>Conception et réalisation de contenu web selon vos besoins,
           rédaction de contenu, optimisation SEO,
             référencement naturel, designs élégants et étude de projets
              personnalisés.</h1>
-        <div  className={styles.border}></div>
+        <div  id="techno" className={styles.border}></div>
         <h2>Les technologies web innovantes que je met à votre dispotion.</h2>
         <p>Avec une approche qui repose sur la simplicité et l&apos;efficacité,
            garantissant des sites web élégants et performants. Je vous 
@@ -54,6 +54,20 @@ export default function MainPage() {
             des sites web réactifs, séduisants et parfaitement adaptés 
             à vos besoins.
         </p>
+
+        <h3>Un exemple de réalisation avec <a href="https://portefolio-lacour-alexandre.vercel.app/">ce site</a></h3>
+        <a href="https://portefolio-lacour-alexandre.vercel.app/">
+          <Image 
+              src="/pfnext.webp" 
+              className={styles.siteExemple}
+              alt="image représentant la technologie Hyper Text Markup Language alias HTML"
+              height="200"
+              width="300"
+              style={{objectFit:"cover",objectPosition:"center"}}
+              priority
+            />
+        </a>
+        <div className={styles.borderSmall}></div>
         {modal.isOpen && (
         <Modal
         params={{
@@ -97,7 +111,7 @@ export default function MainPage() {
             <Image 
               src="/HTML.png" 
               className={styles.showCardImg}
-              alt="image représentant la technologie Hyper Text Markup Language alias HTML"
+              alt="image et lien vers un site portefolio en next js html et css"
               height="200"
               width="200"
               style={{objectFit:"contain",objectPosition:"center"}}
@@ -212,13 +226,26 @@ export default function MainPage() {
           </div>
           
         </div>
-        <div className={styles.border}></div>
+        <div id="SEO" className={styles.border}></div>
         <h2>Des audit de sites afin de vous proposer des axes d&apos;amélioration </h2>
         <p>Grâce a un audit approfondi j&apos;optimise les sites et 
           leur contenu afin d&apos;améliorer le référencement des moteurs de recherche,
           améliorant ainsi les nombres de vues. Il est également possible de 
           raffraîchir des pages existantes en remaniant les textes et l&apos;accessibilité
         </p>
+        <h3>Un exemple de réalisation avec <a href="https://akalabete.github.io/akalabete-github.io/">ce site</a></h3>
+        <a href="https://akalabete.github.io/akalabete-github.io/">
+          <Image 
+              src="/exempleSEO.webp" 
+              className={styles.siteExemple}
+              alt="image et lien vers un site, exemple d'optimisation SEO"
+              height="200"
+              width="300"
+              style={{objectFit:"cover",objectPosition:"center"}}
+              priority
+            />
+        </a>
+        <div className={styles.borderSmall}></div>
         <div className={styles.SEOContainer}>
           <div 
             className={styles.showCard}
@@ -350,7 +377,7 @@ export default function MainPage() {
           </div>
         </div>
       </section>
-      <section className={styles.contacts}>
+      <section id="About" className={styles.contacts}>
       <div className={styles.border}></div>
         <h2>Je suis disponible pour vous aider à réaliser vos projets.</h2>
         <div className={styles.contactsContainer}>
