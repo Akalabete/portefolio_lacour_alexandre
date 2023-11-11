@@ -7,7 +7,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeOpen } from '@fortawesome/free-regular-svg-icons';
 
 const tooltipStyles = {
-    backgroundColor: 'black',
+    backgroundColor: 'rgba(0, 0, 0, 0.6)',
     color: 'darkred',
     padding: '5px',
     borderRadius: '10px',
