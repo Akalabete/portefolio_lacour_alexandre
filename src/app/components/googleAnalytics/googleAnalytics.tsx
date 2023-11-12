@@ -3,7 +3,6 @@ import Script from "next/script";
     import * as gtag from "@/lib/gtag";
     
     const GoogleAnalytics = () => {
-        console.log("GA_TRACKING_ID:", process.env.GA_TRACKING_ID);
       return (
         <>
           <Script
