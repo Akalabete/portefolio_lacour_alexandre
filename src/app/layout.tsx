@@ -6,8 +6,23 @@ import styles from './page.module.scss';
 import GoogleAnalytics from "./components/googleAnalytics/googleAnalytics";
 
 
-
-
+const localBusiness = {
+  localBusiness: {
+    "@type": "LocalBusiness",
+    name: "Dev'your Synergy",
+    description: "développeur web indépendant",
+    url: "https://lacouralexandre.tech",
+    telephone: "0695238126",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "6 rue bel-air",
+      addressLocality: "Saint aulaye",
+      addressRegion: "Nouvelle acquitaine",
+      postalCode: "24410",
+      addressCountry: "France"
+    },
+  },
+}
 
 
 export const metadata: Metadata = {
@@ -124,8 +139,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      
-
+      <script type="application/ld+json">{JSON.stringify(localBusiness)}</script>
       <body className={styles.body}>
       
         <Providers>
