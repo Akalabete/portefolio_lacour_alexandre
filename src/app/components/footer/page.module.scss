@@ -6,8 +6,13 @@
     min-height: 100px;;
     text-align:center;
     margin: auto;
+    
     a{
         text-decoration: none;
         color: $mainContrastColor;
     }
+}
+.footerWidgetContainer{
+    margin: auto;
+    max-width: 40%;
 }

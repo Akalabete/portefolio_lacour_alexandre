@@ -103,7 +103,12 @@
         border-radius: 10px;
         @media screen and (min-width: 750px) {
           max-width: 35%;
+        }
       }
+      .presParagraph:hover {
+        @include imageBoxing;
+      transform: scale(1.2);
+      transition: 0.3s
       }
     }
   }

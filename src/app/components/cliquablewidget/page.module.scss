@@ -1,5 +1,5 @@
 .faContainer{
-    width: 50%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -9,23 +9,24 @@
 
 .tooltipenvelope{
     position: absolute;
-    top: 10px;
-    left: 25%;    
+    top: 50%;
+    left: 0;    
 }
 .tooltipgit{
     position: absolute;
-    top: 10px;
+    top: 50%;
     left: 50%;    
 }
 .tooltiplink{
     position: absolute;
-    top: 10px;
-    left: 75%;    
+    top: 50%;
+    left: 100%;    
 }
 .icon {
     position: absolute;
+    left: 0;
 }
 .active {
     position: absolute;
-    top: -10px;
+    
 }

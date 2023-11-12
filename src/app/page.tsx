@@ -54,20 +54,8 @@ export default function MainPage() {
             des sites web réactifs, séduisants et parfaitement adaptés 
             à vos besoins.
         </p>
-
-        <h3>Un exemple de réalisation avec <a href="https://portefolio-lacour-alexandre.vercel.app/">ce site</a></h3>
-        <a href="https://portefolio-lacour-alexandre.vercel.app/">
-          <Image 
-              src="/pfnext.webp" 
-              className={styles.siteExemple}
-              alt="image représentant la technologie Hyper Text Markup Language alias HTML"
-              height="200"
-              width="300"
-              style={{objectFit:"cover",objectPosition:"center"}}
-              priority
-            />
-        </a>
         <div className={styles.borderSmall}></div>
+        <h3>Un exemple de réalisation avec <a href="https://portefolio-lacour-alexandre.vercel.app/">ce site</a></h3>  
         {modal.isOpen && (
         <Modal
         params={{
@@ -84,32 +72,30 @@ export default function MainPage() {
       )} 
         <div className={styles.technologiesContainer}>
           
-          <div 
+        <div 
             className={`${styles.showCard} ${selectedCardIndex === 1 ? 'cardCollapser' : ''}`}
             onClick={() => handleCardClick({
               index: 1,
               title: "Compétences HTML",
               skills: [
-                "Structure sémantique aux normes",
-                "Utilisation de balises HTML",
-                "Création de formulaires",
-                "Mise à jour et maintenance",
-                "Intégration de ressources externes"
+                "HTML",
+                "CSS",
+                "JS",
+                "NextJS/React"
               ],
               image: [
-                "/html.png",
-                "/structure.png",
-                "/balises.jpg",
-                "/form.png",
-                "/maintenance.png",
-                "/gitmerge.png"
+                "/pfnext.webp",
+                "/HTML.webp",
+                "/CSS.webp",
+                "/JS.webp",
+                "/NEXT.webp",
               ],
-              imageAlt: "Exemple illustrant la pratique du HTML",
-              link: "https://github.com/Akalabete/projet_booki",
+              imageAlt: "Panel de compétence liées au développement web",
+              link: "https://portefolio-lacour-alexandre.vercel.app/",
             })}
           >
             <Image 
-              src="/HTML.png" 
+              src="/pfnext.webp" 
               className={styles.showCardImg}
               alt="image et lien vers un site portefolio en next js html et css"
               height="200"
@@ -118,112 +104,7 @@ export default function MainPage() {
               priority
             />
           </div>
-          <div 
-            className={styles.showCard}
-            onClick={() => onShowCardClick({
-              index: 2,
-              title: "Compétences CSS",
-              skills: [
-                "Maîtrise des sélecteurs CSS",
-                "Mise en page display flex ou grid",
-                "Styles d'animation CSS",
-                "Utilisation de police et typographies",
-                "Préprocesseur CSS (SASS, SCSS)",
-                "Méthodologie CSS(BEM)"
-              ],
-              image:[
-                "/CSS.png",
-                "/HTML.png",
-                "/CSS.png",
-                "/JS.png",
-                "/NEXT.png",
-                "/SEO.png",
-                "/redactionSEO.png"
-              ],
-              imageAlt: "Exemple illustrant la pratique du CSS",
-              link: 'https://github.com/Akalabete/Ohmyfood',
-            })}
-          >
-            <Image 
-              src="/CSS.png" 
-              className={styles.showCardImg}
-              alt="image représentant la technologie Cascading Stylesheet  alias CSS"
-              height="200"
-              width="200"
-              style={{objectFit:"contain",objectPosition:"center"}}
-              priority
-            />
-          </div>
-          <div 
-            className={styles.showCard}
-            onClick={() => onShowCardClick({
-              index: 3,
-              title: "Compétences JavaScript",
-              skills: [
-                "Javascript ES6",
-                "Manipulation du DOM",
-                "Evénement et gestion des événements",
-                "Requêtes Fetch",
-                "Intégration et utilisation d'API",
-                "Manipulation de tableaux et chaîne de caractères"
-              ],
-              image: [
-                "/JS.png",
-                "/HTML.png",
-                "/CSS.png",
-                "/JS.png",
-                "/NEXT.png",
-                "/SEO.png",
-                "/redactionSEO.png"
-              ],
-              imageAlt: "Exemple illustrant la pratique du Javascript",
-              link: 'https://github.com/Akalabete/Porte-folio-Sophie-BLUEL',
-            })}
-          >
-            <Image 
-              src="/JS.png" 
-              className={styles.showCardImg}
-              alt="image représentant la technologie Javascript alias JS"
-              height="200"
-              width="200"
-              style={{objectFit:"contain",objectPosition:"center"}}
-              priority
-            />
-          </div>
-          <div 
-            className={styles.showCard}
-            onClick={() => onShowCardClick({
-              index: 4,
-              title: "Compétences NextJS",
-              skills: [
-                "REACT",
-                "Routage dynamique",
-                "Gestionnaire d'état(REDUX)",
-                "Rendu Côté client",
-                "Pages dynamiques"
-              ],
-              image: [
-                "/NEXT.png",
-                "/HTML.png",
-                "/CSS.png",
-                "/JS.png",
-                "/NEXT.png",
-                "/SEO.png",
-              ],
-              imageAlt: "Exemple illustrant la pratique du NextJS",
-              link: 'https://portefolio-lacour-alexandre.vercel.app/',
-            })}
-          >
-            <Image 
-              src="/NEXT.png" 
-              className={styles.showCardImg}
-              alt="image représentant la technologie Next Javascript alias NEXT"
-              height="200"
-              width="200"
-              style={{objectFit:"contain",objectPosition:"center"}}
-              priority
-            />
-          </div>
+          
           
         </div>
         <div id="SEO" className={styles.border}></div>
@@ -233,142 +114,36 @@ export default function MainPage() {
           améliorant ainsi les nombres de vues. Il est également possible de 
           raffraîchir des pages existantes en remaniant les textes et l&apos;accessibilité
         </p>
-        <h3>Un exemple de réalisation avec <a href="https://akalabete.github.io/akalabete-github.io/">ce site</a></h3>
-        <a href="https://akalabete.github.io/akalabete-github.io/">
-          <Image 
-              src="/exempleSEO.webp" 
-              className={styles.siteExemple}
-              alt="image et lien vers un site, exemple d'optimisation SEO"
-              height="200"
-              width="300"
-              style={{objectFit:"cover",objectPosition:"center"}}
-              priority
-            />
-        </a>
         <div className={styles.borderSmall}></div>
+        <h3>Un exemple de réalisation avec <a href="https://akalabete.github.io/akalabete-github.io/">ce site</a></h3>
+        
         <div className={styles.SEOContainer}>
           <div 
             className={styles.showCard}
-            onClick={() => onShowCardClick({
-              index: 5,
+            onClick={() => handleCardClick({
+              index: 2,
               title: "Compétences SEO",
               skills: [
                 "Optimisation on-page",
-                "Optimisation des images",
                 "Recherches de mots-clés pertinents",
+                "Normes d'accessibilité web(WCAG)",
                 "Optimisation de la vitesse de chargement"
               ],
               image: [
-                "/SEO.png",
-                "/HTML.png",
-                "/CSS.png",
-                "/JS.png",
-                "/NEXT.png",
+                "/exempleseo.webp",
+                "/SEO.webp",
+                "/redactionSEO.webp",
+                "/accessibilityIconSet.webp",
+                "/optimisation.webp",
               ],
-              imageAlt: "Exemple illustrant les bonnes pratiques SEO",
+              imageAlt: "Panel de compétences liées au SEO et aux bonnes pratiques du développement web",
               link: 'https://akalabete.github.io/akalabete-github.io/',
             })}
           >
             <Image 
-              src="/SEO.png" 
+              src="/exempleseo.webp" 
               className={styles.showCardImg}
               alt="image représentant une analyse SEO"
-              height="200"
-              width="200"
-              style={{objectFit:"contain",objectPosition:"center"}}
-              priority
-            />
-          </div>
-          <div 
-            className={styles.showCard}
-            onClick={() => onShowCardClick({
-              index: 6,
-              title: "Rédaction SEO",
-              skills: [
-                "Rédaction incluant des mots-clés pertinents",
-                "Contenu de qualité, engageant pour les utilisateurs",
-                "Création de titre et description méta efficaces",
-                "Liens internes et externes"
-              ],
-              image: [
-                "/redactionSEO.png",
-                "/HTML.png",
-                "/CSS.png",
-                "/JS.png",
-                "/NEXT.png",
-              ],
-              imageAlt: "Exemple illustrant un contenu web adapté",
-              link: 'https://github.com/Akalabete/akalabete-github.io',
-            })}
-          >
-            <Image 
-              src="/redactionSEO.png" 
-              className={styles.showCardImg}
-              alt="image représentant une rédaction de contenu SEO"
-              height="200"
-              width="200"
-              style={{objectFit:"contain",objectPosition:"center"}}
-              priority
-            />
-          </div>
-          <div 
-            className={styles.showCard}
-            onClick={() => onShowCardClick({
-              index: 7,
-              title: "Accessibilité",
-              skills: [
-                "Normes d'accessibilité web(WCAG)",
-                "Utilisation de couleurs accessibles",
-                "Navigation clavier",
-                "Textes alternatifs"
-              ],
-              image: [
-                "/accessibilityIconSet.png",
-                "/HTML.png",
-                "/CSS.png",
-                "/JS.png",
-                "/NEXT.png",
-              ],
-              imageAlt: "Exemple illustrant les normes d'accessibilité",
-              link: 'https://github.com/Akalabete/akalabete-github.io',
-            })}
-          >
-            <Image 
-              src="/accessibilityIconSet.png" 
-              className={styles.showCardImg}
-              alt="image représentant unpannel de signaux d'accessibilité"
-              height="200"
-              width="200"
-              style={{objectFit:"contain",objectPosition:"center"}}
-              priority
-            />
-          </div>
-          <div 
-            className={styles.showCard}
-            onClick={() => onShowCardClick({
-              index: 8,
-              title: "Audit de sites",
-              skills: [
-                "Utilisation d'outils d'audit",
-                "Création de rapports d'optimisation",
-                "Proposition d'axes d'amélioration",
-                "Suivi de traffic"
-              ],
-              image: [
-                "/optimisation.png",
-                "/HTML.png",
-                "/CSS.png",
-                "/JS.png",
-                "/NEXT.png",
-              ],
-              imageAlt: "Exemple illustrant un outil d'audit",
-              link: 'https://github.com/Akalabete/akalabete-github.io',
-            })}
-          >
-            <Image 
-              src="/optimisation.png" 
-              className={styles.showCardImg}
-              alt="image représentant un gain de 100% de performances lors d'une analyse de site"
               height="200"
               width="200"
               style={{objectFit:"contain",objectPosition:"center"}}
@@ -404,3 +179,300 @@ export default function MainPage() {
   )
   
 }
+
+ /*
+        <a href="https://portefolio-lacour-alexandre.vercel.app/">
+          <Image 
+              src="/pfnext.webp" 
+              className={styles.siteExemple}
+              alt="image représentant la technologie Hyper Text Markup Language alias HTML"
+              height="200"
+              width="300"
+              style={{objectFit:"cover",objectPosition:"center"}}
+              priority
+            />
+        </a>
+        
+        <div 
+            className={`${styles.showCard} ${selectedCardIndex === 1 ? 'cardCollapser' : ''}`}
+            onClick={() => handleCardClick({
+              index: 1,
+              title: "Compétences HTML",
+              skills: [
+                "Structure sémantique aux normes",
+                "Utilisation de balises HTML",
+                "Création de formulaires",
+                "Mise à jour et maintenance",
+                "Intégration de ressources externes"
+              ],
+              image: [
+                "/html.webp",
+                "/structure.webp",
+                "/balises.jpg",
+                "/form.webp",
+                "/maintenance.webp",
+                "/gitmerge.webp"
+              ],
+              imageAlt: "Exemple illustrant la pratique du HTML",
+              link: "https://github.com/Akalabete/projet_booki",
+            })}
+          >
+            <Image 
+              src="/HTML.webp" 
+              className={styles.showCardImg}
+              alt="image et lien vers un site portefolio en next js html et css"
+              height="200"
+              width="200"
+              style={{objectFit:"contain",objectPosition:"center"}}
+              priority
+            />
+          </div>
+          <div 
+            className={styles.showCard}
+            onClick={() => onShowCardClick({
+              index: 2,
+              title: "Compétences CSS",
+              skills: [
+                "Maîtrise des sélecteurs CSS",
+                "Mise en page display flex ou grid",
+                "Styles d'animation CSS",
+                "Utilisation de police et typographies",
+                "Préprocesseur CSS (SASS, SCSS)",
+                "Méthodologie CSS(BEM)"
+              ],
+              image:[
+                "/CSS.webp",
+                "/HTML.webp",
+                "/CSS.webp",
+                "/JS.webp",
+                "/NEXT.webp",
+                "/SEO.webp",
+                "/redactionSEO.webp"
+              ],
+              imageAlt: "Exemple illustrant la pratique du CSS",
+              link: 'https://github.com/Akalabete/Ohmyfood',
+            })}
+          >
+            <Image 
+              src="/CSS.webp" 
+              className={styles.showCardImg}
+              alt="image représentant la technologie Cascading Stylesheet  alias CSS"
+              height="200"
+              width="200"
+              style={{objectFit:"contain",objectPosition:"center"}}
+              priority
+            />
+          </div>
+          <div 
+            className={styles.showCard}
+            onClick={() => onShowCardClick({
+              index: 3,
+              title: "Compétences JavaScript",
+              skills: [
+                "Javascript ES6",
+                "Manipulation du DOM",
+                "Evénement et gestion des événements",
+                "Requêtes Fetch",
+                "Intégration et utilisation d'API",
+                "Manipulation de tableaux et chaîne de caractères"
+              ],
+              image: [
+                "/JS.webp",
+                "/HTML.webp",
+                "/CSS.webp",
+                "/JS.webp",
+                "/NEXT.webp",
+                "/SEO.webp",
+                "/redactionSEO.webp"
+              ],
+              imageAlt: "Exemple illustrant la pratique du Javascript",
+              link: 'https://github.com/Akalabete/Porte-folio-Sophie-BLUEL',
+            })}
+          >
+            <Image 
+              src="/JS.webp" 
+              className={styles.showCardImg}
+              alt="image représentant la technologie Javascript alias JS"
+              height="200"
+              width="200"
+              style={{objectFit:"contain",objectPosition:"center"}}
+              priority
+            />
+          </div>
+          <div 
+            className={styles.showCard}
+            onClick={() => onShowCardClick({
+              index: 4,
+              title: "Compétences NextJS",
+              skills: [
+                "REACT",
+                "Routage dynamique",
+                "Gestionnaire d'état(REDUX)",
+                "Rendu Côté client",
+                "Pages dynamiques"
+              ],
+              image: [
+                "/NEXT.webp",
+                "/HTML.webp",
+                "/CSS.webp",
+                "/JS.webp",
+                "/NEXT.webp",
+                "/SEO.webp",
+              ],
+              imageAlt: "Exemple illustrant la pratique du NextJS",
+              link: 'https://portefolio-lacour-alexandre.vercel.app/',
+            })}
+          >
+            <Image 
+              src="/NEXT.webp" 
+              className={styles.showCardImg}
+              alt="image représentant la technologie Next Javascript alias NEXT"
+              height="200"
+              width="200"
+              style={{objectFit:"contain",objectPosition:"center"}}
+              priority
+            />
+        </div>
+        <a href="https://akalabete.github.io/akalabete-github.io/">
+          <Image 
+              src="/exempleSEO.webp" 
+              className={styles.siteExemple}
+              alt="image et lien vers un site, exemple d'optimisation SEO"
+              height="200"
+              width="300"
+              style={{objectFit:"cover",objectPosition:"center"}}
+              priority
+            />
+        </a>
+        <div className={styles.borderSmall}></div>
+        <div className={styles.SEOContainer}>
+          <div 
+            className={styles.showCard}
+            onClick={() => onShowCardClick({
+              index: 5,
+              title: "Compétences SEO",
+              skills: [
+                "Optimisation on-page",
+                "Optimisation des images",
+                "Recherches de mots-clés pertinents",
+                "Optimisation de la vitesse de chargement"
+              ],
+              image: [
+                "/SEO.webp",
+                "/HTML.webp",
+                "/CSS.webp",
+                "/JS.webp",
+                "/NEXT.webp",
+              ],
+              imageAlt: "Exemple illustrant les bonnes pratiques SEO",
+              link: 'https://akalabete.github.io/akalabete-github.io/',
+            })}
+          >
+            <Image 
+              src="/SEO.webp" 
+              className={styles.showCardImg}
+              alt="image représentant une analyse SEO"
+              height="200"
+              width="200"
+              style={{objectFit:"contain",objectPosition:"center"}}
+              priority
+            />
+          </div>
+          <div 
+            className={styles.showCard}
+            onClick={() => onShowCardClick({
+              index: 6,
+              title: "Rédaction SEO",
+              skills: [
+                "Rédaction incluant des mots-clés pertinents",
+                "Contenu de qualité, engageant pour les utilisateurs",
+                "Création de titre et description méta efficaces",
+                "Liens internes et externes"
+              ],
+              image: [
+                "/redactionSEO.webp",
+                "/HTML.webp",
+                "/CSS.webp",
+                "/JS.webp",
+                "/NEXT.webp",
+              ],
+              imageAlt: "Exemple illustrant un contenu web adapté",
+              link: 'https://github.com/Akalabete/akalabete-github.io',
+            })}
+          >
+            <Image 
+              src="/redactionSEO.webp" 
+              className={styles.showCardImg}
+              alt="image représentant une rédaction de contenu SEO"
+              height="200"
+              width="200"
+              style={{objectFit:"contain",objectPosition:"center"}}
+              priority
+            />
+          </div>
+          <div 
+            className={styles.showCard}
+            onClick={() => onShowCardClick({
+              index: 7,
+              title: "Accessibilité",
+              skills: [
+                "Normes d'accessibilité web(WCAG)",
+                "Utilisation de couleurs accessibles",
+                "Navigation clavier",
+                "Textes alternatifs"
+              ],
+              image: [
+                "/accessibilityIconSet.webp",
+                "/HTML.webp",
+                "/CSS.webp",
+                "/JS.webp",
+                "/NEXT.webp",
+              ],
+              imageAlt: "Exemple illustrant les normes d'accessibilité",
+              link: 'https://github.com/Akalabete/akalabete-github.io',
+            })}
+          >
+            <Image 
+              src="/accessibilityIconSet.webp" 
+              className={styles.showCardImg}
+              alt="image représentant unpannel de signaux d'accessibilité"
+              height="200"
+              width="200"
+              style={{objectFit:"contain",objectPosition:"center"}}
+              priority
+            />
+          </div>
+          <div 
+            className={styles.showCard}
+            onClick={() => onShowCardClick({
+              index: 8,
+              title: "Audit de sites",
+              skills: [
+                "Utilisation d'outils d'audit",
+                "Création de rapports d'optimisation",
+                "Proposition d'axes d'amélioration",
+                "Suivi de traffic"
+              ],
+              image: [
+                "/optimisation.webp",
+                "/HTML.webp",
+                "/CSS.webp",
+                "/JS.webp",
+                "/NEXT.webp",
+              ],
+              imageAlt: "Exemple illustrant un outil d'audit",
+              link: 'https://github.com/Akalabete/akalabete-github.io',
+            })}
+          >
+            <Image 
+              src="/optimisation.webp" 
+              className={styles.showCardImg}
+              alt="image représentant un gain de 100% de performances lors d'une analyse de site"
+              height="200"
+              width="200"
+              style={{objectFit:"contain",objectPosition:"center"}}
+              priority
+            />
+          </div>
+        </div>
+        */

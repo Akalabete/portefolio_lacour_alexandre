@@ -14,7 +14,9 @@ export default function Footer() {
             <div className={styles.footerItem}>
                 <p>©️ Dev&apos;your synergy</p>
             </div>
-            <CliquableWidgets />
+            <div className={styles.footerWidgetContainer}>
+                <CliquableWidgets />
+            </div>
          </footer> 
     )
 

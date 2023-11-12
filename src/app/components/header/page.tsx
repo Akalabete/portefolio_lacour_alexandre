@@ -12,7 +12,7 @@ export default function Header() {
         <div className={styles.header}>
             <div className={styles.selfPic}>
                 <Image 
-                src="/photo.jpg" 
+                src="/photo.webp" 
                 className={styles.coverImage}
                 alt="Photo de l'auteur du site"
                 height="200"
@@ -21,7 +21,7 @@ export default function Header() {
                 priority
                 />
             </div>
-            <div className={styles.headerTitle}>
+            <div>
                 <h2 className={styles.titles}>LACOUR Alexandre</h2>
                 <h3 className={styles.subTitles}>développeur web</h3>
                 <CliquableWidgets />
