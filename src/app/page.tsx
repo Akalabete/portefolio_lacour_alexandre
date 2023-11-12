@@ -7,13 +7,9 @@ import { openModal, closeModal } from "@/redux/features//modalSlice";
 import Modal from './components/modal/page';
 
 
-
-
-  
 export default function MainPage() {
 
   const dispatch = useAppDispatch();
-  
   const modal = useAppSelector((state: { modal: any; }) => state.modal);
   const [selectedCardIndex, setSelectedCardIndex] = useState(-1); 
   const handleCloseModal = () => {
@@ -37,6 +33,7 @@ export default function MainPage() {
     setSelectedCardIndex(cardData.index);
     onShowCardClick(cardData);
   };
+
   return(
     <main>
       <section className={styles.realisations}>
@@ -70,8 +67,7 @@ export default function MainPage() {
         }}
       />
       )} 
-        <div className={styles.technologiesContainer}>
-          
+        <div className={styles.technologiesContainer}>          
         <div 
             className={`${styles.showCard} ${selectedCardIndex === 1 ? 'cardCollapser' : ''}`}
             onClick={() => handleCardClick({
@@ -103,9 +99,7 @@ export default function MainPage() {
               style={{objectFit:"contain",objectPosition:"center"}}
               priority
             />
-          </div>
-          
-          
+          </div>       
         </div>
         <div id="SEO" className={styles.border}></div>
         <h2>Des audit de sites afin de vous proposer des axes d&apos;amélioration </h2>
@@ -116,7 +110,6 @@ export default function MainPage() {
         </p>
         <div className={styles.borderSmall}></div>
         <h3>Un exemple de réalisation avec <a href="https://akalabete.github.io/akalabete-github.io/">ce site</a></h3>
-        
         <div className={styles.SEOContainer}>
           <div 
             className={styles.showCard}
@@ -147,7 +140,6 @@ export default function MainPage() {
               height="200"
               width="200"
               style={{objectFit:"contain",objectPosition:"center"}}
-              priority
             />
           </div>
         </div>
@@ -164,20 +156,17 @@ export default function MainPage() {
                 et élégants, en mettant l&apos;accent sur la simplicité et 
                 l&apos;utilisabilité.
             </p>
-
             <p className={styles.presParagraph}>Que ce soit pour un site personnel, une application ou
               tout autre projet en ligne, je suis là pour vous 
               accompagner dans la réalisation de vos idées. 
               Mon engagement est de mettre en œuvre mes compétences 
               pour concrétiser votre vision sur internet.
-            </p>
-            
+            </p>       
           </div>
         </div>
       </section>
     </main>
   )
-  
 }
 
  /*

@@ -4,7 +4,6 @@ import styles from './page.module.scss';
 import CliquableWidgets from '../cliquablewidget/page';
 import Link from 'next/link';
 
-
   
 export default function Header() {
     
@@ -24,8 +23,7 @@ export default function Header() {
             <div>
                 <h2 className={styles.titles}>LACOUR Alexandre</h2>
                 <h3 className={styles.subTitles}>développeur web</h3>
-                <CliquableWidgets />
-                
+                <CliquableWidgets />           
             </div>
             <div className={styles.nav}>
                 <nav className={styles.navElements}>
@@ -54,6 +52,5 @@ export default function Header() {
                 </nav>
             </div>
         </div>
-    )
-    
+    )    
 }
