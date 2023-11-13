@@ -139,7 +139,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <script type="application/ld+json">{JSON.stringify(localBusiness)}</script>
+      <head>
+        <script type="application/ld+json">{JSON.stringify(localBusiness)}</script>
+      </head>
       <body className={styles.body}>
       
         <Providers>
