@@ -63,6 +63,8 @@ const handleIconClick = (argument: string) => {
                     className={styles.icon}
                     icon={faEnvelopeOpen}
                     onClick={() => handleIconClick("faEnvelop")}
+                    tabIndex={0}
+                    role="tooltip"
                 />
                 {isTooltipVisible && activeIcon === 'faEnvelop' && (
                 <div
@@ -84,9 +86,11 @@ const handleIconClick = (argument: string) => {
                     width="20px"
                     icon={faGithub}
                     onClick={() => handleIconClick("faGit")}
-                    />
-                    {isTooltipVisible && activeIcon === 'faGit' && (
-                    <div
+                    tabIndex={0}
+                    role="tooltip"
+                />
+                {isTooltipVisible && activeIcon === 'faGit' && (
+                <div
                     className={`tooltiptext ${isCopied ? 'active' : ''}`}
                     style={tooltipStyles}
                 >
@@ -105,9 +109,11 @@ const handleIconClick = (argument: string) => {
                     width="20px"
                     icon={faLinkedin} 
                     onClick={() => handleIconClick("faLinked")}
-                    />
-                    {isTooltipVisible && activeIcon === 'faLink' && (
-                    <div
+                    tabIndex={0}
+                    role="tooltip"       
+                />
+                {isTooltipVisible && activeIcon === 'faLink' && (
+                <div
                     className={`tooltiptext ${isCopied ? 'active' : ''}`}
                     style={tooltipStyles}
                 >

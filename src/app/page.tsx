@@ -36,7 +36,7 @@ export default function MainPage() {
 
   return(
     <main>
-      <section className={styles.realisations}>
+      <section tabIndex={0} className={styles.realisations}>
         <div className={styles.borderLg}></div>
         <h1>Conception et réalisation de contenu web selon vos besoins,
           rédaction de contenu, optimisation SEO,
@@ -98,6 +98,7 @@ export default function MainPage() {
               width="200"
               style={{objectFit:"contain",objectPosition:"center"}}
               priority
+              tabIndex={0}
             />
           </div>       
         </div>
@@ -140,23 +141,24 @@ export default function MainPage() {
               height="200"
               width="200"
               style={{objectFit:"contain",objectPosition:"center"}}
+              tabIndex={0}
             />
           </div>
         </div>
       </section>
-      <section id="About" className={styles.contacts}>
+      <section tabIndex={0} id="About" className={styles.contacts}>
       <div className={styles.border}></div>
         <h2>Je suis disponible pour vous aider à réaliser vos projets.</h2>
         <div className={styles.contactsContainer}>
           <div className={styles.presentationContainer}>
-            <p className={styles.presParagraph}>En tant que développeur web junior, je m&apos;appuie sur
+            <p tabIndex={0} className={styles.presParagraph}>En tant que développeur web junior, je m&apos;appuie sur
                ma formation d&apos;intégrateur web dispensée par <a href="https://openclassrooms.com/fr/">Open Classrooms</a> afin de vous proposer des 
                solutions pratiques et esthétiques pour vos projets en 
                ligne. Mon objectif est de créer des sites web fonctionnels
                 et élégants, en mettant l&apos;accent sur la simplicité et 
                 l&apos;utilisabilité.
             </p>
-            <p className={styles.presParagraph}>Que ce soit pour un site personnel, une application ou
+            <p tabIndex={0}                                   className={styles.presParagraph}>Que ce soit pour un site personnel, une application ou
               tout autre projet en ligne, je suis là pour vous 
               accompagner dans la réalisation de vos idées. 
               Mon engagement est de mettre en œuvre mes compétences 
@@ -164,6 +166,7 @@ export default function MainPage() {
             </p>       
           </div>
         </div>
+        <h3 tabIndex={1}>&quot;La seule constante, c&apos;est le changement.&quot;<br />Isaac Asimov</h3>
       </section>
     </main>
   )

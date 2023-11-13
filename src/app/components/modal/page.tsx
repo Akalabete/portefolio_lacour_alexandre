@@ -27,7 +27,7 @@ export default function Modal({params}:ModalProps){
     }
     return (
         <div className={styles.modalOverlay} onClick={params.onClose}>
-            <div className={styles.modal} onMouseOut={handleMouseOut}>
+            <div role="dialog" className={styles.modal} onMouseOut={handleMouseOut}>
                 <div className={styles.modalContainer}>
                     <div className={styles.modalInfos}>
                     <h2 className={styles.modalTitle}>{params.title}</h2>

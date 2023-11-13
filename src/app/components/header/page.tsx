@@ -27,23 +27,23 @@ export default function Header() {
             </div>
             <div className={styles.nav}>
                 <nav className={styles.navElements}>
-                    <ul>
-                        <li className={styles.liElementOne}>
+                    <ul role="menu">
+                        <li role="menuitem" className={styles.liElementOne}>
                             <Link href="#techno">
                                 Technologies
                             </Link>
                         </li>
-                        <li className={styles.liElementTwo}>
+                        <li role="menuitem" className={styles.liElementTwo}>
                             <Link href="#SEO">
                                 SEO
                             </Link>
                         </li>
-                        <li className={styles.liElementThree}>
+                        <li role="menuitem" className={styles.liElementThree}>
                             <Link href="#About">
                                 A&nbsp;propos
                             </Link>
                         </li>
-                        <li className={styles.liElementFour}>
+                        <li role="menuitem" className={styles.liElementFour}>
                             <Link href="#contact">
                                 Contact
                             </Link>
