@@ -72,7 +72,7 @@ export default function MainPage() {
             className={`${styles.showCard} ${selectedCardIndex === 1 ? 'cardCollapser' : ''}`}
             onClick={() => handleCardClick({
               index: 1,
-              title: "Compétences HTML",
+              title: "Languages et Frameworks",
               skills: [
                 "HTML",
                 "CSS",
