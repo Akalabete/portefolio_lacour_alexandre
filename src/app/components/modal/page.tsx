@@ -52,6 +52,7 @@ export default function Modal({params}:ModalProps){
                             height="200"
                             width="200"
                             style={{objectFit:"contain",objectPosition:"center"}}
+                            tabIndex={0}
                         />
                     </div>
                 </div>

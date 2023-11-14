@@ -99,6 +99,7 @@ export default function MainPage() {
               style={{objectFit:"contain",objectPosition:"center"}}
               priority
               tabIndex={0}
+              aria-label='cliquez pour ouvrir un pop-up qui illustre les compétences utilisées sur le site'
             />
           </div>       
         </div>
@@ -142,6 +143,7 @@ export default function MainPage() {
               width="200"
               style={{objectFit:"contain",objectPosition:"center"}}
               tabIndex={0}
+              aria-label='cliquez pour ouvrir un pop-up qui illustre les compétences utilisées sur le site'
             />
           </div>
         </div>
@@ -166,7 +168,7 @@ export default function MainPage() {
             </p>       
           </div>
         </div>
-        <h3 tabIndex={1}>&quot;La seule constante, c&apos;est le changement.&quot;<br />Isaac Asimov</h3>
+        <h3 tabIndex={0}>&quot;La seule constante, c&apos;est le changement.&quot;<br />Isaac Asimov</h3>
       </section>
     </main>
   )

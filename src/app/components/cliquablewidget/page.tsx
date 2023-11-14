@@ -65,6 +65,7 @@ const handleIconClick = (argument: string) => {
                     onClick={() => handleIconClick("faEnvelop")}
                     tabIndex={0}
                     role="tooltip"
+                    aria-label='cliquez pour copier l&apos;adresse mail dans le presse-papier'
                 />
                 {isTooltipVisible && activeIcon === 'faEnvelop' && (
                 <div
@@ -88,6 +89,7 @@ const handleIconClick = (argument: string) => {
                     onClick={() => handleIconClick("faGit")}
                     tabIndex={0}
                     role="tooltip"
+                    aria-label='cliquez pour copier le lien vers le compte github'
                 />
                 {isTooltipVisible && activeIcon === 'faGit' && (
                 <div
@@ -110,7 +112,8 @@ const handleIconClick = (argument: string) => {
                     icon={faLinkedin} 
                     onClick={() => handleIconClick("faLinked")}
                     tabIndex={0}
-                    role="tooltip"       
+                    role="tooltip"
+                    aria-label='cliquez pour copier le lien vers le profil linkedin'
                 />
                 {isTooltipVisible && activeIcon === 'faLink' && (
                 <div
