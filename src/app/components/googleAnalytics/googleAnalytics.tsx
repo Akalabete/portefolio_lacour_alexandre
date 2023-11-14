@@ -7,7 +7,7 @@ import Script from "next/script";
         <>
           <Script
             strategy='afterInteractive'
-            src={`https://www.googletagmanager.com/gtag/js?id=G-9REW16Q6BT`}
+            src={`https://www.googletagmanager.com/gtag/js?id=G-K48W2KQNB3`}
           />
           <Script
             id='gtag-init'
