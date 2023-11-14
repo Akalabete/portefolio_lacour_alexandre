@@ -8,7 +8,7 @@ import GoogleAnalytics from "./components/googleAnalytics/googleAnalytics";
 
 export const metadata: Metadata = {
   title: 'Porte Folio developpeur web LACOUR Alexandre',
-  description: 'Présentation de travaux numériques et compétences associées',
+  description: "Conception et réalisation de contenu web rédaction SEO, optimisation SEO, référencement naturel, designs élégants étude de projets personnalisés.",
   generator: 'Next.js',
   applicationName: 'Next.js',
   referrer: 'origin-when-cross-origin',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Porte Folio developpeur web LACOUR Alexandre',
-    description: 'Présentation de travaux numériques et compétences associées',
+    description: "Conception et réalisation de contenu web rédaction SEO, optimisation SEO, référencement naturel, designs élégants étude de projets personnalisés.",
     url: 'https://portefolio-lacour-alexandre.vercel.app/',
     siteName: 'PorteFolio de LACOUR Alexandre',
     images: [
