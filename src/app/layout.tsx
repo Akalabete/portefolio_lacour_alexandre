@@ -6,25 +6,6 @@ import styles from './page.module.scss';
 import GoogleAnalytics from "./components/googleAnalytics/googleAnalytics";
 
 
-const localBusiness = {
-  localBusiness: {
-    "@type": "LocalBusiness",
-    name: "Dev'your Synergy",
-    description: "développeur web indépendant",
-    url: "https://lacouralexandre.tech",
-    telephone: "0695238126",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "6 rue bel-air",
-      addressLocality: "Saint aulaye",
-      addressRegion: "Nouvelle acquitaine",
-      postalCode: "24410",
-      addressCountry: "France"
-    },
-  },
-}
-
-
 export const metadata: Metadata = {
   title: 'Porte Folio developpeur web LACOUR Alexandre',
   description: 'Présentation de travaux numériques et compétences associées',
@@ -139,9 +120,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <head>
-        <script type="application/ld+json">{JSON.stringify(localBusiness)}</script>
-      </head>
+      
       <body className={styles.body}>
       
         <Providers>
@@ -156,18 +135,29 @@ export default function RootLayout({
 }
 
 
-/* localBusiness: {
-    "@type": "LocalBusiness",
-    name: "Dev'your Synergy",
-    description: "développeur web indépendant",
-    url: "https://lacouralexandre.tech",
-    telephone: "0695238126",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "6 rue bel-air",
-      addressLocality: "Saint aulaye",
-      addressRegion: "Nouvelle acquitaine",
-      postalCode: "24410",
-      addressCountry: "France"
-    },
-  }, */
+/* import he from 'he';
+
+
+
+const localBusiness = {
+  "@type": "LocalBusiness",
+  name: "Dev'your Synergy",
+  description: "développeur web indépendant",
+  url: "https://lacouralexandre.tech",
+  telephone: "0695238126",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "6 rue bel-air",
+    addressLocality: "Saint aulaye",
+    addressRegion: "Nouvelle acquitaine",
+    postalCode: "24410",
+    addressCountry: "France"
+  }
+};
+
+const encodedLocalBusiness = he.encode(JSON.stringify(localBusiness));
+
+
+<script type="application/ld+json">
+          {encodedLocalBusiness} 
+        </script>*/
