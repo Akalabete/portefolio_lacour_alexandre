@@ -58,6 +58,7 @@ const handleIconClick = (argument: string) => {
                 onMouseLeave={handleIconMouseLeave}
                 >
                 <FontAwesomeIcon
+                    aria-hidden="false"
                     height="20px"
                     width="20px"
                     className={styles.icon}
@@ -82,6 +83,7 @@ const handleIconClick = (argument: string) => {
                 onMouseLeave={handleIconMouseLeave}
                 >
                 <FontAwesomeIcon 
+                    aria-hidden="false"
                     className={styles.icon}
                     height="20px"
                     width="20px"
@@ -106,6 +108,7 @@ const handleIconClick = (argument: string) => {
                 onMouseLeave={handleIconMouseLeave}
                 >                 
                 <FontAwesomeIcon 
+                    aria-hidden="false"
                     className={styles.icon}
                     height="20px"
                     width="20px"
